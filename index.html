@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" ></link>
+</head>
+<body>
+    <div class="container">
+      <div class="nav-wrapper">
+          <div class="left-side">
+              <div class="nav-link-wrapper active-nav-link">
+                  <a href="index.html">Home</a>
+              </div>
+
+              <div class="nav-link-wrapper">  
+                  <a href="about.html">About</a>
+              </div>
+          </div>
+          
+          <div class="right-side">
+              <div class="brand">
+                  <div>HRIDOY BISWAS</div>
+              </div>
+          </div>
+       </div> 
+
+       <div class="content-wrapper">
+           <div class="portfolio-items-wrapper">
+              <div class="portfolio-item-wrapper">
+                 
+                  
+                   <div class="portfolio-image-background" style="background-image:url(Images/Lab.jpg)"></div>
+                
+
+                   <div class="image-text-wrapper">
+                     
+                       <div class="logo-wrapper"  >
+                         <a style="text-decoration:none" href="https://cviptools.ece.siue.edu/index.php"> 
+                              <p style="color:white;font-size: 150%;"> The Lab I am working</p> 
+                         </a>
+                       </div>
+                        
+                       <div class="subtitle subtitle-wrapper">
+                           
+                       </div>
+                   </div>
+                   
+                   
+                </div> 
+
+
+               <div class="portfolio-item-wrapper">
+                  <div class="portfolio-image-background" style="background-image:url(Images/Research.png)"></div>
+
+                    <div class="image-text-wrapper">
+                       <div class="logo-wrapper">
+                          <a  style="text-decoration:none" href="research.html"> 
+                              <p style="color:white;font-size: 150%;"> Research</p> 
+                          </a>
+                       </div>
+
+                      <div class="subtitle subtitle-wrapper"> 
+                         
+                      </div>
+                   </div>
+                </div>
+
+
+                <div class="portfolio-item-wrapper">
+                 <div class="portfolio-image-background" style="background-image:url(Images/4.png)"></div>
+                    <div class="image-text-wrapper">
+                      <div class="logo-wrapper">
+                         <a  style="text-decoration:none" href="projects.html"> 
+                              <p style="color:white;font-size: 150%;"> Projects</p> 
+                          </a>
+                     </div>
+                      
+                      
+                       <div class="subtitle subtitle-wrapper"> 
+                         
+                        </div>
+                    </div>
+                </div>
+                
+
+                <div class="portfolio-item-wrapper">
+                 <div class="portfolio-image-background" style="background-image:url(Images/Github.jpg)"></div>
+                       <div class="image-text-wrapper">
+                         <div class="logo-wrapper">
+                             <a  style="text-decoration:none" href="https://github.com/Hridoy-bit"> 
+                                  <p style="color:white;font-size: 150%;"  > Github Page</p> 
+                              </a>
+                         </div>
+                         
+                         
+                           <div class="subtitle subtitle-wrapper"> 
+                            
+                           </div>
+                       </div>
+                   
+                </div>
+                 
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-image-background" style="background-image:url(Images/Paper.jpg)"></div>
+                          <div class="image-text-wrapper">
+                            <div class="logo-wrapper">
+                                <a  style="text-decoration:none" href="publications.html"> 
+                                     <p style="color:white;font-size: 150%;"  > Publication and Awards</p> 
+                                 </a>
+                            </div>
+                            
+                            
+                              <div class="subtitle subtitle-wrapper"> 
+                               
+                              </div>
+                          </div>
+                      
+                </div>
+              
+            </div>
+       </div>
+    </div>
+</body>
+<script>
+ const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper');
+  
+        portfolioItems.forEach(portfolioItem => {
+           portfolioItem.addEventListener('mouseover', () => {
+           console.log(portfolioItem.childNodes[1].classList)
+           portfolioItem.childNodes[1].classList.add('image-darken');
+           });
+  
+           portfolioItem.addEventListener('mouseout', () => {
+            console.log(portfolioItem.childNodes[1].classList)
+            portfolioItem.childNodes[1].classList.remove('image-darken');
+            });
+        });
+  
+</script>
+  
+</html>
